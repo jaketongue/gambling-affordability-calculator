@@ -201,3 +201,55 @@ body {
     margin-right: auto;
 
 }
+
+._ia42uj {
+    color: rgb(87, 87, 86);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    text-align: center;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+._1o74af6 {
+    color: rgb(19, 44, 108);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    text-align: center;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+._rh0gzj {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    /* I added this in */
+    font-family: "Sky Font";
+    height: 42px;
+    margin-top: 25px;
+    cursor: pointer;
+    /* And changed this */
+    width: 90%;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(rgb(31, 169, 74) 0%, rgb(0, 149, 23) 100%);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+    padding: 12px;
+}
