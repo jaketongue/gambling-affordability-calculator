@@ -253,3 +253,73 @@ body {
     border-radius: 4px;
     padding: 12px;
 }
+
+._17edwu9 {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 400;
+    /* I added this in */
+    font-family: "Sky Font";
+    height: 42px;
+    margin-top: 15px;
+    cursor: pointer;
+    /* And changed this */
+    width: 90%;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to top, rgb(244, 244, 244), rgb(255, 255, 255));
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(19, 44, 108, 0.2);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+._t9n6pf {
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    color: rgb(87, 87, 86);
+    font-size: 16px;
+    height: 48px;
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 400;
+    max-width: 300px;
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(244, 244, 244) 100%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(210, 212, 228);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 12px;
+    text-decoration: none;
+    margin: 0px auto 26px;
+}
+
+._t9n6pf::before {
+    display: inline-block;
+    content: "?";
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    color: white;
+    font-weight: 600;
+    margin-right: 0.5em;
+    background: rgb(31, 169, 74);
+    border-radius: 50%;
+}
+
+._csjj34 {
+    background-color: rgb(255, 255, 255);
+    padding: 38px 15px 30px;
+}
