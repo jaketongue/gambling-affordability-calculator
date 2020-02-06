@@ -88,7 +88,8 @@ body {
     background: black !important;
 }
 
-._dh4cvfl {
+/* Added the other class in */
+._dh4cvfl, ._dh4cvfla {
     -webkit-box-pack: center !important;
     -webkit-box-align: center !important;
     position: relative !important;
@@ -98,10 +99,18 @@ body {
     justify-content: center !important;
     width: 25px !important;
     height: 25px !important;
-    color: rgb(31, 169, 73) !important;
+
+    /* Added this in for now??? */
+    /* color: rgb(31, 169, 73) !important; */
+    color: white !important;
+
     box-sizing: border-box !important;
     text-align: center !important;
-    background: white !important;
+
+    /* Added this in for now??? */
+    /* background: white !important; */
+    background: rgb(31, 169, 73) !important;
+
     transition: all 0.25s ease-in-out 0s !important;
     overflow: hidden !important;
     border-radius: 50% !important;
@@ -112,9 +121,17 @@ body {
 }
 
 ._dh4cvfl::before {
-    font-family: coreicons !important;
+    /* font-family: coreicons !important; */
     font-style: normal !important;
-    content: "" !important;
+    content: "1" !important;
+    font-weight: bold !important;
+}
+
+/* Added this in... */
+._dh4cvfla::before {
+    /* font-family: coreicons !important; */
+    font-style: normal !important;
+    content: "2" !important;
     font-weight: bold !important;
 }
 
@@ -185,7 +202,7 @@ body {
 ._1kkmb1zx::before {
     font-family: coreicons !important;
     font-style: normal !important;
-    content: "" !important;
+    /* content: "" !important; */
     margin-right: 4px !important;
 }
 
@@ -350,4 +367,124 @@ body {
 
 .zz {
     padding: 0px 15px 20px;
+}
+
+._1y52p9j {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 264px;
+    margin: 0px auto 15px;
+}
+
+._pmwann6 {
+    background-image: url(https://static.skybetservices.com/core-static-assets/gamstop-logo.svg);
+    display: block;
+    height: 12px;
+    width: 68px;
+    background-size: contain;
+    line-height: 0;
+    font-size: 0px;
+    color: transparent;
+    background-repeat: no-repeat;
+    margin: 12px;
+}
+
+._bqi4508 {
+    background-image: url(https://static.skybetservices.com/core-static-assets/begambleaware.svg);
+    display: block;
+    height: 16px;
+    width: 110px;
+    background-size: contain;
+    line-height: 0;
+    font-size: 0px;
+    color: transparent;
+    background-repeat: no-repeat;
+    margin: 12px;
+}
+
+._1sa7llz1 {
+    background-image: url(https://static.skybetservices.com/core-static-assets/gamcare.svg);
+    display: block;
+    width: 65px;
+    height: 20px;
+    background-size: contain;
+    line-height: 0;
+    font-size: 0px;
+    color: transparent;
+    background-repeat: no-repeat;
+    margin: 12px;
+}
+
+._3zz0bxa {
+    background-image: url(https://static.skybetservices.com/core-static-assets/gamban-landscape.svg);
+    display: block;
+    height: 20px;
+    width: 68px;
+    background-size: contain;
+    line-height: 0;
+    font-size: 0px;
+    color: transparent;
+    background-repeat: no-repeat;
+    margin: 12px;
+}
+
+._ulyfow {
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 210px;
+    margin: 0px auto;
+}
+
+._1x9mbur0 {
+    font-weight: 200;
+    text-align: center;
+    color: rgb(87, 87, 86);
+    margin-top: 7px;
+}
+
+._hpxwzj {
+    font-weight: 400;
+    color: rgb(19, 44, 108);
+    text-decoration: underline;
+}
+
+._7h0wi8 {
+    display: block;
+    height: 38px;
+    width: 38px;
+    color: white;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    background: rgb(217, 34, 49);
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+._7h0wi8::after {
+    content: "+";
+    display: inline-block;
+    transform: translateY(-0.15em);
+    font-size: 16px;
+    margin-right: -3px;
+}
+
+.calcPageText {
+    color: rgb(87, 87, 86);
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 4px;
+    text-align: center;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
 }
