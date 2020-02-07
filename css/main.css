@@ -21,6 +21,7 @@ body {
 
 .flexContainer {
     background-color: white;
+    overflow: auto;
 }
 
 .columnHeaderContainer {
