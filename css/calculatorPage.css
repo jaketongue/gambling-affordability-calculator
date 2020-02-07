@@ -1,0 +1,45 @@
+.rowHeader {
+    background-color: rgb(25, 72, 161);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border: 2px;
+}
+
+.rowSteps {
+    background-color: rgba(168, 184, 233, 0.836);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border: 2px;
+}
+
+.roundedTopTable {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.roundedBottomTable {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.table>tbody>tr>td {
+    border-style: solid;
+    border-color: rgb(25, 72, 161);
+    background-color: rgba(206, 223, 255, 0.795);
+}
+
+.table>tbody>tr>td>div {
+    font-size: 11px;
+}
+
+.table>tbody>tr>td>div>p>input{
+    float:right;
+    width: 75px;
+    border: 2px;
+    border-style:solid;
+    border-color: rgb(25, 72, 161);
+    border-radius: 5px;
+    text-align: center;
+}
