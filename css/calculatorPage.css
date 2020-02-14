@@ -4,6 +4,7 @@
     text-align: center;
     font-size: 14px;
     border: 2px;
+    cursor: pointer;
 }
 
 .rowSteps {
@@ -12,6 +13,7 @@
     text-align: center;
     font-size: 14px;
     border: 2px;
+    cursor: pointer;
 }
 
 .roundedTopTable {
@@ -26,12 +28,11 @@
 
 .table>tbody>tr>td {
     border-style: solid;
-    /* border-color: rgb(25, 72, 161); */
     background-color: rgba(206, 223, 255, 0.795);
 }
 
 .table>tbody>tr>td>div {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .table>tbody>tr>td>div>p>input{
@@ -42,6 +43,7 @@
     border-color: rgb(25, 72, 161);
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
 }
 
 input::-webkit-outer-spin-button,
