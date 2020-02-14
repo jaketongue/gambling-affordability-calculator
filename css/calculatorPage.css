@@ -7,7 +7,7 @@
 }
 
 .rowSteps {
-    background-color: rgba(168, 184, 233, 0.836);
+    background-color: rgb(25, 72, 161);
     color: white;
     text-align: center;
     font-size: 14px;
@@ -26,7 +26,7 @@
 
 .table>tbody>tr>td {
     border-style: solid;
-    border-color: rgb(25, 72, 161);
+    /* border-color: rgb(25, 72, 161); */
     background-color: rgba(206, 223, 255, 0.795);
 }
 
@@ -42,4 +42,10 @@
     border-color: rgb(25, 72, 161);
     border-radius: 5px;
     text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

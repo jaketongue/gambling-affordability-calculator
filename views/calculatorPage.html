@@ -48,7 +48,7 @@
 
         <!-- This section is for the main content -->
                 <div class="_5ohjji">
-                    <p class="calcPageText">Estimate how much you can afford to gamble with us by entering your details into the form provided below:</p>
+                    <p class="calcPageText">Estimate how much you can afford to gamble with us by entering your <b><u>Monthly</u></b> income and spending details into the form provided below:</p>
 
                 <div>  
                     <form action="">
@@ -62,30 +62,29 @@
                             <tr class=""> 
                                 <td class="collapse" id="incomeDetails">
                                     <div>
-                                        <p>
-                                            Monthly Salary (after deductions)
-                                            <input type="number" id="salary" name="salary" value="0">
-                                        </p>
+                                        <p>Salary (after deductions)<input type="number" id="salary" name="salary" value="0" oninput="incomeFunction()"></p>
+                                        <p>Bonuses<input type="number" id="bonus" name="bonus" value="0" oninput="incomeFunction()"></p>
+                                        <p>Other Income<input type="number" id="other" name="other" value="0" oninput="incomeFunction()"></p>
+                                        <p>Pension Payments<input type="number" id="pension" name="pension" value="0" oninput="incomeFunction()"></p>
+                                        <p>Savings<input type="number" id="savings" name="savings" value="0" oninput="incomeFunction()"></p>
+                                        <br>
+                                        <p>Total Income<input id="totalincome" type="number" value="0"></p>
+                                                    
+                                        <!-- Total Income - Javascript Function -->
+                                            <script>
+                                            function incomeFunction() {
+                                            
+                                            var salary = parseInt(document.getElementById('salary').value);
+                                            var bonus = parseInt(document.getElementById('bonus').value);
+                                            var other = parseInt(document.getElementById('other').value);
+                                            var pension = parseInt(document.getElementById('pension').value);
+                                            var savings = parseInt(document.getElementById('savings').value);
+                                            var totalincome = (salary + bonus + other) - (pension + savings);
+                                            
+                                            document.getElementById("totalincome").value = totalincome;
+                                            }
+                                            </script>
 
-                                        <p>
-                                            Bonuses
-                                            <input type="number" id="bonus" name="bonus" value="0">
-                                        </p>
-
-                                        <p>
-                                            Other Income
-                                            <input type="number" id="other" name="other" value="0">
-                                        </p>
-
-                                        <p>
-                                            Pension Payments
-                                            <input type="number" id="pension" name="pension" value="0">
-                                        </p>
-
-                                        <p>
-                                            Savings
-                                            <input type="number" id="savings" name="savings" value="0">
-                                        </p>
                                     </div>
                                 </td>
                             </tr>
@@ -97,25 +96,107 @@
                             <tr class=""> 
                                     <td class="collapse" id="householdSpending">
                                         <div>
-                                            <p>
-                                                Bills
-                                                <input type="number" id="bills" name="bills" value="0">
-                                            </p>
+                                            <p>Mortgage Payments<input type="number" id="mortgage" name="mortgage" value="0" oninput="householdFunction()"></p>
+                                            <p>Rent Payments<input type="number" id="rent" name="rent" value="0" oninput="householdFunction()"></p>
+                                            <p>Council Tax<input type="number" id="council" name="council" value="0" oninput="householdFunction()"></p>
+                                            <p>Utilities<input type="number" id="utilities" name="utilities" value="0" oninput="householdFunction()"></p>
+                                            <p>Broadband/TV/Phone<input type="number" id="tech" name="tech" value="0" oninput="householdFunction()"></p>
+                                            <p>Shopping (Food/Drink)<input type="number" id="food" name="food" value="0" oninput="householdFunction()"></p>
+                                            <p>Insurance<input type="number" id="insurance" name="insurance" value="0" oninput="householdFunction()"></p>
+                                            <br>
+                                            <p>Total Household Spending<input id="totalhousehold" type="number" value="0"></p>
+
+                                            <!-- Household Spending  - Javascript Function -->
+                                                <script>
+                                                    function householdFunction() {
+                                                    
+                                                    var mortgage = parseInt(document.getElementById('mortgage').value);
+                                                    var rent = parseInt(document.getElementById('rent').value);
+                                                    var council = parseInt(document.getElementById('council').value);
+                                                    var utilities = parseInt(document.getElementById('utilities').value);
+                                                    var tech = parseInt(document.getElementById('tech').value);
+                                                    var food = parseInt(document.getElementById('food').value);
+                                                    var insurance = parseInt(document.getElementById('insurance').value);
+                                                    var totalhousehold = (mortgage + rent + council + utilities + tech + food + insurance);
+                                                    
+                                                    document.getElementById("totalhousehold").value = totalhousehold;
+                                                    }
+                                                </script>
+            
                                         </div>
                                     </td>
                                 </tr>
 
                             <tr class="rowSteps">
-                                <th scope="row" data-toggle="collapse" href="#collapseExample">Step 3 of 5 - Additional Spending</th>
+                                <th scope="row" data-toggle="collapse" href="#otherSpending">Step 3 of 5 - Additional Spending</th>
+                            </tr>
+
+                            <tr class=""> 
+                                <td class="collapse" id="otherSpending">
+                                    <div>
+                                        <p>Travel<input type="number" id="travel" name="travel" value="0" oninput="additionalFunction()"></p>
+                                        <p>Loan Repayments<input type="number" id="loan" name="loan" value="0" oninput="additionalFunction()"></p>
+                                        <p>Leisure/Entertainment<input type="number" id="leisure" name="leisure" value="0" oninput="additionalFunction()"></p>
+                                        <p>Other Shopping<input type="number" id="othershop" name="othershop" value="0" oninput="additionalFunction()"></p>
+                                        <br>
+                                        <p>Total Additional Spending<input type="number" id="totaladditional" name="totaladditional" value="0"></p>
+
+                                        <!-- Additional Spending  - Javascript Function -->
+                                            <script>
+                                                function additionalFunction() {
+                                                
+                                                var travel = parseInt(document.getElementById('travel').value);
+                                                var loan = parseInt(document.getElementById('loan').value);
+                                                var leisure = parseInt(document.getElementById('leisure').value);
+                                                var othershop = parseInt(document.getElementById('othershop').value);
+                                                var totaladditional = (travel + loan + leisure + othershop);
+                                                
+                                                document.getElementById("totaladditional").value = totaladditional;
+                                                }
+                                        </script>
+                                    </div>
+                                </td>
                             </tr>
 
                             <tr class="rowSteps">
-                                <th scope="row" data-toggle="collapse" href="#collapseExample">Step 4 of 5 - Your Gambling</th>
+                                <th scope="row" data-toggle="collapse" href="#yourGambling">Step 4 of 5 - Your Gambling</th>
                             </tr>
 
+                            <tr class=""> 
+                                    <td class="collapse" id="yourGambling">
+                                        <div>
+                                            <p>Gambling<input type="number" id="gambling" name="gambling" value="0" oninput="gamblingFunction()"></p>
+                                            <br>
+                                            <p>Total Gambling<input type="number" id="totalgambling" name="totalgambling" value="0"></p>
+
+                                        <!-- Gambling Spending  - Javascript Function -->
+                                            <script>
+                                                function gamblingFunction() {
+                                                
+                                                var gambling = parseInt(document.getElementById('gambling').value);
+                                                var totalgambling = (gambling);
+                                                
+                                                document.getElementById("totalgambling").value = totalgambling;
+                                                }
+                                            </script>
+                                        </div>
+                                    </td>
+                                </tr>
+
                             <tr class="rowSteps">
-                                <th scope="row" class="roundedBottomTable" data-toggle="collapse" href="#collapseExample">Step 5 of 5 - Review your Results</th>
+                                <th scope="row" class="roundedBottomTable" data-toggle="collapse" href="#review">Step 5 of 5 - Review your Results</th>
                             </tr>
+
+                            <tr class=""> 
+                                    <td class="collapse" id="review">
+                                        <div>
+                                            <p>Income Details</p>
+                                            <p>Household Spending</p>
+                                            <p>Additional Spending</p>
+                                            <p>Total Gambling</p>
+                                        </div>
+                                    </td>
+                                </tr>
 
                             </tbody>
                         </table>
@@ -127,12 +208,12 @@
                 <div class="zz">
         <!-- Start now button div -->
                     <div>
-                        <a class="_rh0gzj" href="summaryPage.html" data-qa="calculate-button">Calculate my affordability</a>
+                        <a class="_rh0gzj" style="text-decoration: none; color:white;" href="summaryPage.html" data-qa="calculate-button">Calculate my affordability</a>
                     </div>
     
         <!-- Skip affordability check button div -->
                     <div>
-                        <a class="_17edwu9" href="summaryPage.html" data-qa="skip-affordability-check" id="skipButton">Skip affordability check</a>
+                        <a class="_17edwu9" style="text-decoration: none; color:inherit;" href="summaryPage.html" data-qa="skip-affordability-check" id="skipButton">Skip affordability check</a>
                     </div>
                 </div>
 
