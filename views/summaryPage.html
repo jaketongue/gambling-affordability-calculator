@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <head>
+    <link rel="stylesheet" type="text/css" href="../css/vendor/jquery/jquery-ui.css"/>
     <link rel="stylesheet" type="text/css" href="../css/main.css"/>
     <link rel="stylesheet" type="text/css" href="../css/landingPage.css"/>
     <link rel="stylesheet" type="text/css" href="../css/summaryPage.css"/>
@@ -58,12 +60,17 @@
                             </div>
                             
                         <div class="_15oy8to">
-                            <span class="affordability_text" data-qa="current-limit-value">
-                            <span class="_3vb6hs">£170</span> per month</span>
+                            <span class="affordability_text" data-qa="current-limit-value" value="0">
+                                &pound;
+                                <span id="affordabilityEstimate" class="_3vb6hs">
+           
+                                </span> 
+                                per month
+                            </span>
                         </div>
                     </div>
 
-                    <div class="_fcpqk1" data-qa="intro-text">However, you have stated that you <b>currently</b> spend this amount on gambling:</div>
+                    <div class="_fcpqk1" data-qa="intro-text">You have stated that you <b>currently</b> spend this amount on gambling:</div>
                     <div class="_1ev4tfg">
                     <div class="_1ifvlii" data-qa="limit-info">
                         <div class="_13gp5re">
@@ -72,27 +79,30 @@
                         
                         <div class="_15oy8to">
                             <span class="current_text" data-qa="current-limit-value">
-                            <span class="_3vb6hs">£275</span> per month</span>
+                                &pound;
+                            <span id="reviewTotalGambling" class="_3vb6hs"></span> per month</span>
                         </div>
                     </div>
                     
-                    
-                    <div class="_fcpqk1" data-qa="intro-text">Therefore, our calculations suggest that you are spending <b>more/less</b> than you can afford by this amount:</div>
-                    <div class="_1ev4tfg">
-                    <div class="_1ifvlii" data-qa="limit-info">
-                        <div class="_13gp5re">
+                    <div class="_fcpqk1_hide" data-qa="intro-text">Therefore, our calculations suggest that you are spending <b>more</b> than you can afford by this amount:</div>
+                    <div class="_1ev4tfg_hide">
+                    <div class="_1ifvlii_hide" data-qa="limit-info">
+                        <div class="_13gp5re_hide">
                             <span data-qa="current-limit">Spending Difference</span>
                         </div>
                         
-                        <div class="_15oy8to">
+                        <div class="_15oy8to_hide">
                             <span class="difference_text" data-qa="current-limit-value">
-                            <span class="_3vb6hs">£95</span> per month</span>
+                                &pound;
+                            <span id="spendingDifference" class="_3vb6hs"></span> per month</span>
                         </div>
                     </div>
-                    
-                    <div class="_fcpqk1" data-qa="intro-text">Would you like to set a <b>Deposit Limit</b> based on our affordability estimate?</div>
-
                 </div>
+
+                <div class="_fcpqk2" data-qa="intro-text">Would you like to put a <b>Deposit Limit</b> in place based on our affordability estimate?</div>
+                <div class="_fcpqk3" data-qa="intro-text"><i>We reccommend that you discuss your affordability estimate with a member of our Customer Experience Team.</i></div>
+
+
             </div>
             </div>
             </div>
@@ -100,12 +110,18 @@
             <div class="zz">
         <!-- Start now button div -->
                 <div>
-                    <a class="_rh0gzj" href="" data-qa="set-deposit-button">Set deposit limit</a>
+                    <a class="_rh0gzj" data-qa="set-deposit-button">Set deposit limit</a>
                 </div>
                 
+        <!-- Contact Us button div -->        
+                <div>
+                    <a class="_17edwu9" data-qa="seek-help" id="hlpButton">Contact Us</a>
+                </div>
+
+
         <!-- Skip affordability check button div -->
                 <div>
-                    <a class="_17edwu9" href="" data-qa="not-right-now" id="nrnButton">Not right now</a>
+                    <a class="_17edwu9" data-qa="not-right-now" id="nrnButton">Not right now</a>
                 </div>
             </div>
 
@@ -131,5 +147,10 @@
             </div>
         </div>
     </div>
+    
+    <script src="../scripts/vendor/jquery/js/jquery.min.js"></script>
+    <script src="../scripts/vendor/jquery/js/jquery-ui.js"></script>
+    <script src="../scripts/summaryPage.js"></script>
+
 </body>
 </html>

@@ -23,11 +23,60 @@
     padding-top: 20px;
 }
 
+._fcpqk2 {
+    color: rgb(87, 87, 86);
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+
+._fcpqk3 {
+    color: rgb(87, 87, 86);
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+
+._fcpqk1_hide {
+    color: rgb(87, 87, 86);
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 20px;
+}
+
 ._1ev4tfg {
     margin: 30px 0px;
 }
 
+._1ev4tfg_hide {
+    margin: 30px 0px;
+}
+
 ._1ifvlii {
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    align-items: center;
+    animation-name: keyframe_fwm8wn;
+    animation-delay: 0.3s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    box-shadow: rgb(210, 212, 228) 0px 1px 6px, rgb(210, 212, 228) 0px 1px 1px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    /* opacity: 0; */
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+._1ifvlii_hide {
     -webkit-box-pack: justify;
     -webkit-box-align: center;
     align-items: center;
@@ -61,6 +110,17 @@
     flex: 1 1 0%;
 }
 
+._13gp5re_hide {
+    -webkit-box-pack: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 18px;
+    flex: 1 1 0%;
+}
+
 ._15oy8to {
     -webkit-box-pack: center;
     -webkit-box-direction: normal;
@@ -71,10 +131,24 @@
     line-height: 18px;
     text-align: right;
     flex: 1 1 0%;
+    font-size: 16px;
+}
+
+._15oy8to_hide {
+    -webkit-box-pack: center;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 18px;
+    text-align: right;
+    flex: 1 1 0%;
+    font-size: 16px;
 }
 
 .current_text {
-    color: rgb(238, 160, 16);
+    color: black;
 }
 
 .affordability_text {

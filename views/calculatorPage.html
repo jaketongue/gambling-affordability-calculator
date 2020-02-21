@@ -69,22 +69,6 @@
                                         <p>Savings<input type="number" id="savings" name="savings" value="0" oninput="incomeFunction()"></p>
                                         <br>
                                         <p>Total Income<input id="totalincome" type="number" value="0"></p>
-                                                    
-                                        <!-- Total Income - Javascript Function -->
-                                            <script>
-                                            function incomeFunction() {
-                                            
-                                            var salary = parseInt(document.getElementById('salary').value);
-                                            var bonus = parseInt(document.getElementById('bonus').value);
-                                            var other = parseInt(document.getElementById('other').value);
-                                            var pension = parseInt(document.getElementById('pension').value);
-                                            var savings = parseInt(document.getElementById('savings').value);
-                                            var totalincome = (salary + bonus + other) - (pension + savings);
-                                            
-                                            document.getElementById("totalincome").value = totalincome;
-                                            }
-                                            </script>
-
                                     </div>
                                 </td>
                             </tr>
@@ -105,24 +89,6 @@
                                             <p>Insurance<input type="number" id="insurance" name="insurance" value="0" oninput="householdFunction()"></p>
                                             <br>
                                             <p>Total Household Spending<input id="totalhousehold" type="number" value="0"></p>
-
-                                            <!-- Household Spending  - Javascript Function -->
-                                                <script>
-                                                    function householdFunction() {
-                                                    
-                                                    var mortgage = parseInt(document.getElementById('mortgage').value);
-                                                    var rent = parseInt(document.getElementById('rent').value);
-                                                    var council = parseInt(document.getElementById('council').value);
-                                                    var utilities = parseInt(document.getElementById('utilities').value);
-                                                    var tech = parseInt(document.getElementById('tech').value);
-                                                    var food = parseInt(document.getElementById('food').value);
-                                                    var insurance = parseInt(document.getElementById('insurance').value);
-                                                    var totalhousehold = (mortgage + rent + council + utilities + tech + food + insurance);
-                                                    
-                                                    document.getElementById("totalhousehold").value = totalhousehold;
-                                                    }
-                                                </script>
-            
                                         </div>
                                     </td>
                                 </tr>
@@ -140,20 +106,6 @@
                                         <p>Other Shopping<input type="number" id="othershop" name="othershop" value="0" oninput="additionalFunction()"></p>
                                         <br>
                                         <p>Total Additional Spending<input type="number" id="totaladditional" name="totaladditional" value="0"></p>
-
-                                        <!-- Additional Spending  - Javascript Function -->
-                                            <script>
-                                                function additionalFunction() {
-                                                
-                                                var travel = parseInt(document.getElementById('travel').value);
-                                                var loan = parseInt(document.getElementById('loan').value);
-                                                var leisure = parseInt(document.getElementById('leisure').value);
-                                                var othershop = parseInt(document.getElementById('othershop').value);
-                                                var totaladditional = (travel + loan + leisure + othershop);
-                                                
-                                                document.getElementById("totaladditional").value = totaladditional;
-                                                }
-                                        </script>
                                     </div>
                                 </td>
                             </tr>
@@ -165,20 +117,12 @@
                             <tr class=""> 
                                     <td class="collapse" id="yourGambling">
                                         <div>
-                                            <p>Gambling<input type="number" id="gambling" name="gambling" value="0" oninput="gamblingFunction()"></p>
+                                            <p>Sports Betting<input type="number" id="sports" name="sports" value="0" oninput="gamblingFunction()"></p>
+                                            <p>Gaming<input type="number" id="gaming" name="gaming" value="0" oninput="gamblingFunction()"></p>
+                                            <p>Other Gambling (E.g. Lottery)<input type="number" id="othergam" name="othergam" value="0" oninput="gamblingFunction()"></p>
                                             <br>
                                             <p>Total Gambling<input type="number" id="totalgambling" name="totalgambling" value="0"></p>
 
-                                        <!-- Gambling Spending  - Javascript Function -->
-                                            <script>
-                                                function gamblingFunction() {
-                                                
-                                                var gambling = parseInt(document.getElementById('gambling').value);
-                                                var totalgambling = (gambling);
-                                                
-                                                document.getElementById("totalgambling").value = totalgambling;
-                                                }
-                                            </script>
                                         </div>
                                     </td>
                                 </tr>
@@ -190,10 +134,10 @@
                             <tr class=""> 
                                     <td class="collapse" id="review">
                                         <div>
-                                            <p>Total Income<input type="number" id="" name="" value=""></p>
-                                            <p>Total Household Spending<input type="number" id="" name="" value="0"></p>
-                                            <p>Total Additional Spending<input type="number" id="" name="" value="0"></p>
-                                            <p>Total Gambling<input type="number" id="" name="" value="0"></p>
+                                            <p>Total Income<input type="number" id="reviewTotalIncome" name="reviewTotalIncome" value=""></p>
+                                            <p>Total Household Spending<input type="number" id="reviewTotalHousehold" name="reviewTotalHousehold" value=""></p>
+                                            <p>Total Additional Spending<input type="number" id="reviewTotalAdditional" name="reviewTotalAdditional" value=""></p>
+                                            <p>Total Gambling<input type="number" id="reviewTotalGambling" name="reviewTotalGambling" value=""></p>
                                         </div>
                                     </td>
                                 </tr>
@@ -208,7 +152,7 @@
                 <div class="zz">
         <!-- Start now button div -->
                     <div>
-                        <a class="_rh0gzj" style="text-decoration: none; color:white;" href="summaryPage.html" data-qa="calculate-button">Calculate my affordability</a>
+                        <a class="_rh0gzj" style="text-decoration: none; color:white;" data-qa="calculate-button" onclick="calculateAffordabilityFunction()">Calculate my affordability</a>
                     </div>
     
         <!-- Skip affordability check button div -->
@@ -240,6 +184,7 @@
         </div>
     </div>
 
+    <script src="../scripts/calculatorPage.js"></script>
     <script src="../scripts/vendor/jquery/js/jquery.min.js"></script>
     <script src="../scripts/vendor/jquery/js/jquery-ui.js"></script>
     <script src="../scripts/vendor/bootstrap/js/bootstrap.min.js"></script>
