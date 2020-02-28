@@ -1,0 +1,22 @@
+{
+  "name": "gambling-affordability-calculator",
+  "version": "1.0.0",
+  "description": "This repo contains the code for a Gambling Affordability Calculator, created using HTML & Javascript for an MSc Final Year Project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaketongue/gambling-affordability-calculator.git"
+  },
+  "author": "Jake Tongue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaketongue/gambling-affordability-calculator/issues"
+  },
+  "homepage": "https://github.com/jaketongue/gambling-affordability-calculator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
