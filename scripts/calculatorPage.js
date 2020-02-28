@@ -1,3 +1,36 @@
+function calculateValidatedAffordability() {
+
+    var a = document.getElementById('reviewTotalIncome').value;
+    var b = document.getElementById('reviewTotalHousehold').value;
+    var c = document.getElementById('reviewTotalAdditional').value;
+    var d = document.getElementById('reviewTotalGambling').value;
+    if (a == null || a == "", b == null || b == "", c == null || c == "", d == null || d == "") {
+      alert("Please fill in the required fields.");
+      return false;
+    
+    } else {
+        var reviewTotalIncome = parseInt(document.getElementById('reviewTotalIncome').value);
+        var reviewTotalHousehold = parseInt(document.getElementById('reviewTotalHousehold').value);
+        var reviewTotalAdditional = parseInt(document.getElementById('reviewTotalAdditional').value);
+        var reviewTotalGambling = parseInt(document.getElementById('reviewTotalGambling').value);
+        var nanChecker = typeof(NaN);
+        if (true){
+            var calculateAffordability = (reviewTotalIncome) - (reviewTotalHousehold + reviewTotalAdditional + reviewTotalGambling);
+            var calculateSpendingDifference = (calculateAffordability - reviewTotalGambling);
+    
+            localStorage.setItem("disposableIncome", calculateAffordability);
+            localStorage.setItem("spendingDifference", calculateSpendingDifference);
+            localStorage.setItem("reviewTotalGambling", reviewTotalGambling);
+    
+            window.location.href = "./summaryPage.html";
+
+        } else {
+            alert('Oops. Something went wrong!');
+        }
+    }
+}
+
+
 function incomeFunction() {
 
     var salary = parseInt(document.getElementById('salary').value);
@@ -47,24 +80,4 @@ function gamblingFunction() {
     
     document.getElementById("totalgambling").value = totalgambling;
     document.getElementById("reviewTotalGambling").value = totalgambling;
-}
-
-function calculateAffordabilityFunction() {
-    var reviewTotalIncome = parseInt(document.getElementById('reviewTotalIncome').value);
-    var reviewTotalHousehold = parseInt(document.getElementById('reviewTotalHousehold').value);
-    var reviewTotalAdditional = parseInt(document.getElementById('reviewTotalAdditional').value);
-    var reviewTotalGambling = parseInt(document.getElementById('reviewTotalGambling').value);
-    var nanChecker = typeof(NaN);
-    if (true){
-        var calculateAffordability = (reviewTotalIncome) - (reviewTotalHousehold + reviewTotalAdditional + reviewTotalGambling);
-        var calculateSpendingDifference = (calculateAffordability - reviewTotalGambling);
-
-        localStorage.setItem("disposableIncome", calculateAffordability);
-        localStorage.setItem("spendingDifference", calculateSpendingDifference);
-        localStorage.setItem("reviewTotalGambling", reviewTotalGambling);
-
-        window.location.href = "./summaryPage.html";
-    } else {
-        alert('Oops.');
-    }
 }

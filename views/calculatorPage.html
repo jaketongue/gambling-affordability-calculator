@@ -65,9 +65,7 @@
                                         <p>Salary (after deductions)<input type="number" id="salary" name="salary" value="0" oninput="incomeFunction()"></p>
                                         <p>Bonuses<input type="number" id="bonus" name="bonus" value="0" oninput="incomeFunction()"></p>
                                         <p style="padding-bottom:7px">Other Income<input type="number" id="other" name="other" value="0" oninput="incomeFunction()"></p>
-
-                                        <p class="_fcpqk4"><i>The next two boxes are <u>monthly</u> deductions from your salary and will be taken away from the income figures above.</i></p>
-
+                                        <p class="_fcpqk4b"><i>The next two boxes are <u>monthly</u> deductions from your salary and will be taken away from the income figures above.</i></p>
                                         <p>Pension Payments<input type="number" id="pension" name="pension" value="0" oninput="incomeFunction()"></p>
                                         <p>Savings<input type="number" id="savings" name="savings" value="0" oninput="incomeFunction()"></p>
                                         <br>
@@ -106,11 +104,8 @@
                                         <p>Travel<input type="number" id="travel" name="travel" value="0" oninput="additionalFunction()"></p>
                                         <p>Loan Repayments<input type="number" id="loan" name="loan" value="0" oninput="additionalFunction()"></p>
                                         <p style="padding-bottom:7px">Other Shopping<input type="number" id="othershop" name="othershop" value="0" oninput="additionalFunction()"></p>
-                                        
-                                        <p class="_fcpqk4"><i>Leave your gambling spending out of the next box as we are going to break that down in more detail in the next section.</i></p>
-                                        
+                                        <p class="_fcpqk4b"><i>Leave your gambling spending out of the next box as we are going to break that down in more detail in the next section.</i></p>
                                         <p>Leisure/Entertainment<input type="number" id="leisure" name="leisure" value="0" oninput="additionalFunction()"></p>
-                                        
                                         <br>
                                         <p>Total Additional Spending<input type="number" id="totaladditional" name="totaladditional" value="0"></p>
                                     </div>
@@ -124,7 +119,7 @@
                             <tr class=""> 
                                     <td class="collapse" id="yourGambling">
                                         <div>
-                                            <p class="_fcpqk4"><i>Please enter your monthly gambling spending.</i></p>
+                                            <p class="_fcpqk4"><i>Please enter your <u>current</u> monthly spending on gambling prior to signing up to using our services at Sky Bet.</i></p>
                                             <p>Sports Betting<input type="number" id="sports" name="sports" value="0" oninput="gamblingFunction()"></p>
                                             <p>Gaming<input type="number" id="gaming" name="gaming" value="0" oninput="gamblingFunction()"></p>
                                             <p>Other Gambling (E.g. Lottery)<input type="number" id="othergam" name="othergam" value="0" oninput="gamblingFunction()"></p>
@@ -160,18 +155,18 @@
                 <div class="zz">
         <!-- Start now button div -->
                     <div>
-                        <a class="_rh0gzj" style="text-decoration: none; color:white;" data-qa="calculate-button" onclick="calculateAffordabilityFunction()">Calculate my affordability</a>
+                        <a class="_rh0gzj" style="text-decoration: none; color:white;" data-qa="calculate-button" onclick="calculateValidatedAffordability()">Calculate my affordability</a>
                     </div>
     
         <!-- Skip affordability check button div -->
                     <div>
-                        <a class="_17edwu9" style="text-decoration: none; color:inherit;" href="summaryPage.html" data-qa="skip-affordability-check" id="skipButton">Skip affordability check</a>
+                        <a class="_17edwu9" style="text-decoration: none; color:inherit;" href="" data-qa="skip-affordability-check" id="skipButton">Skip affordability check</a>
                     </div>
                 </div>
 
         <!-- Footer button div -->
                     <div class="_csjj34">
-                            <a class="_t9n6pf" href="https://support.skybet.com/app/home?mobile=1" target="_blank" rel="noopener noreferrer" data-qa="footer-help">Need some help?</a>
+                            <a class="_t9n6pf" style="text-decoration: none; color:inherit;" href="https://support.skybet.com/app/home?mobile=1" target="_blank" rel="noopener noreferrer" data-qa="footer-help">Need some help?</a>
                         <div class="_1y52p9j">
                                 <a class="_pmwann6" href="https://www.gamstop.co.uk/" alt="gamstop logo" target="_blank" rel="noopener noreferrer">Gamstop</a>
                                 <a class="_bqi4508" href="https://www.begambleaware.org/" alt="be gamble aware" target="_blank" rel="noopener noreferrer">be gamble aware</a>

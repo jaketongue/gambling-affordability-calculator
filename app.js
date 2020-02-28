@@ -6,7 +6,7 @@ app.use(express.static('images'));
 app.use(express.static('scripts'));
 
 app.get('/', function(req, res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator-/views/' + 'landingPage.html');
+  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'landingPage.html');
 });
 
 app.get('/calculatorPage.html', function(req,res) {
