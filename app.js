@@ -6,15 +6,15 @@ app.use(express.static('images'));
 app.use(express.static('scripts'));
 
 app.get('/', function(req, res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator-copy/views/' + 'landingPage.html');
+  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator-/views/' + 'landingPage.html');
 });
 
 app.get('/calculatorPage.html', function(req,res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator-copy/views/' + 'calculatorPage.html');
+  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'calculatorPage.html');
 });
 
 app.get('/summaryPage.html', function(req,res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator-copy/views/' + 'summaryPage.html');
+  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'summaryPage.html');
 });
 
 app.listen(8000, function () {
