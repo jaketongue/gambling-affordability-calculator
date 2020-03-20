@@ -28,7 +28,7 @@ describe("Testing calculatorPage functionality", () => {
         expect(result.calculateSpendingDifference).toEqual(expectedTotalDifference);
     })
 
-    test("Testing total income value is the addition of the correct values", () => {
+    test("Testing total income value is the calculation of the correct values", () => {
         const salaryTest = 1;
         const bonusTest = 2;
         const otherTest = 3;

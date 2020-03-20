@@ -17,5 +17,5 @@ app.get('/summaryPage.html', function(req,res) {
   res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'summaryPage.html');
 });
 
-app.listen(8000, function () {
+app.listen(process.env.PORT || 8000, function () {
 });
