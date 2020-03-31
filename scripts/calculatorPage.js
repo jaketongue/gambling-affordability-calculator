@@ -4,8 +4,8 @@ function calculateValidatedAffordability(testStore = "") {
     var totalAdditional = testStore.totalAdditional || document.getElementById('reviewTotalAdditional').value;
     var totalGambling = testStore.totalGambling || document.getElementById('reviewTotalGambling').value;
     
-    if (totalIncome == null || totalIncome == "", totalHousehold == null || totalHousehold == "", totalAdditional == null || totalAdditional == "", totalGambling == null || totalGambling == "") {
-      alert("Please fill in the required fields.");
+    if (totalIncome == null || totalIncome == "" || totalIncome == "0" || totalHousehold == null || totalHousehold == "" || totalAdditional == null || totalAdditional == "" || totalGambling == null || totalGambling == "") {
+      alert("Please enter your financial details, so we can estimate how much you can afford to gamble with us or you can choose to skip the affordability check.");
       return false;
     
     } else {
