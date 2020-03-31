@@ -97,6 +97,16 @@ function gamblingFunction(testStore = "") {
     document.getElementById("reviewTotalGambling").value = totalgambling;
 }
 
+const numInputs = document.querySelectorAll('input[type=number]')
+
+    numInputs.forEach(function(input) {
+    input.addEventListener('change', function(e) {
+        if (e.target.value == '') {
+        e.target.value = 0
+    }
+  })
+})
+
 module.exports = {
     calculateValidatedAffordability,
     incomeFunction,

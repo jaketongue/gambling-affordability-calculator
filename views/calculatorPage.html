@@ -62,12 +62,12 @@
                             <tr class=""> 
                                 <td class="collapse" id="incomeDetails">
                                     <div>
-                                        <p>Salary (after deductions)<input type="number" id="salary" name="salary" value="0" oninput="incomeFunction()"></p>
-                                        <p>Bonuses<input type="number" id="bonus" name="bonus" value="0" oninput="incomeFunction()"></p>
-                                        <p style="padding-bottom:7px">Other Income<input type="number" id="other" name="other" value="0" oninput="incomeFunction()"></p>
+                                        <p>Salary (after deductions)<input type="number" id="salary" name="salary" value="0" onblur="incomeFunction()"></p>
+                                        <p>Bonuses<input type="number" id="bonus" name="bonus" value="0" onblur="incomeFunction()"></p>
+                                        <p style="padding-bottom:7px">Other Income<input type="number" id="other" name="other" value="0" onblur="incomeFunction()"></p>
                                         <p class="_fcpqk4b"><i>The next two boxes are <u>monthly</u> deductions from your salary and will be taken away from the income figures above.</i></p>
-                                        <p>Pension Payments<input type="number" id="pension" name="pension" value="0" oninput="incomeFunction()"></p>
-                                        <p>Savings<input type="number" id="savings" name="savings" value="0" oninput="incomeFunction()"></p>
+                                        <p>Pension Payments<input type="number" id="pension" name="pension" value="0" onblur="incomeFunction()"></p>
+                                        <p>Savings<input type="number" id="savings" name="savings" value="0" onblur="incomeFunction()"></p>
                                         <br>
                                         <p>Total Income<input id="totalincome" type="number" value="0"></p>
                                     </div>
@@ -81,13 +81,13 @@
                             <tr class=""> 
                                     <td class="collapse" id="householdSpending">
                                         <div>
-                                            <p>Mortgage Payments<input type="number" id="mortgage" name="mortgage" value="0" oninput="householdFunction()"></p>
-                                            <p>Rent Payments<input type="number" id="rent" name="rent" value="0" oninput="householdFunction()"></p>
-                                            <p>Council Tax<input type="number" id="council" name="council" value="0" oninput="householdFunction()"></p>
-                                            <p>Utilities<input type="number" id="utilities" name="utilities" value="0" oninput="householdFunction()"></p>
-                                            <p>Broadband/TV/Phone<input type="number" id="tech" name="tech" value="0" oninput="householdFunction()"></p>
-                                            <p>Shopping (Food/Drink)<input type="number" id="food" name="food" value="0" oninput="householdFunction()"></p>
-                                            <p>Insurance<input type="number" id="insurance" name="insurance" value="0" oninput="householdFunction()"></p>
+                                            <p>Mortgage Payments<input type="number" id="mortgage" name="mortgage" value="0" onblur="householdFunction()"></p>
+                                            <p>Rent Payments<input type="number" id="rent" name="rent" value="0" onblur="householdFunction()"></p>
+                                            <p>Council Tax<input type="number" id="council" name="council" value="0" onblur="householdFunction()"></p>
+                                            <p>Utilities<input type="number" id="utilities" name="utilities" value="0" onblur="householdFunction()"></p>
+                                            <p>Broadband/TV/Phone<input type="number" id="tech" name="tech" value="0" onblur="householdFunction()"></p>
+                                            <p>Shopping (Food/Drink)<input type="number" id="food" name="food" value="0" onblur="householdFunction()"></p>
+                                            <p>Insurance<input type="number" id="insurance" name="insurance" value="0" onblur="householdFunction()"></p>
                                             <br>
                                             <p>Total Household Spending<input id="totalhousehold" type="number" value="0"></p>
                                         </div>
@@ -101,11 +101,11 @@
                             <tr class=""> 
                                 <td class="collapse" id="otherSpending">
                                     <div>
-                                        <p>Travel<input type="number" id="travel" name="travel" value="0" oninput="additionalFunction()"></p>
-                                        <p>Loan Repayments<input type="number" id="loan" name="loan" value="0" oninput="additionalFunction()"></p>
-                                        <p style="padding-bottom:7px">Other Shopping<input type="number" id="othershop" name="othershop" value="0" oninput="additionalFunction()"></p>
+                                        <p>Travel<input type="number" id="travel" name="travel" value="0" onblur="additionalFunction()"></p>
+                                        <p>Loan Repayments<input type="number" id="loan" name="loan" value="0" onblur="additionalFunction()"></p>
+                                        <p style="padding-bottom:7px">Other Shopping<input type="number" id="othershop" name="othershop" value="0" onblur="additionalFunction()"></p>
                                         <p class="_fcpqk4b"><i>Leave your gambling spending out of the next box as we are going to break that down in more detail in the next section.</i></p>
-                                        <p>Leisure/Entertainment<input type="number" id="leisure" name="leisure" value="0" oninput="additionalFunction()"></p>
+                                        <p>Leisure/Entertainment<input type="number" id="leisure" name="leisure" value="0" onblur="additionalFunction()"></p>
                                         <br>
                                         <p>Total Additional Spending<input type="number" id="totaladditional" name="totaladditional" value="0"></p>
                                     </div>
@@ -120,9 +120,9 @@
                                     <td class="collapse" id="yourGambling">
                                         <div>
                                             <p class="_fcpqk4"><i>Please enter your <u>current</u> monthly spending on gambling prior to signing up to using our services at Sky Bet.</i></p>
-                                            <p>Sports Betting<input type="number" id="sports" name="sports" value="0" oninput="gamblingFunction()"></p>
-                                            <p>Gaming<input type="number" id="gaming" name="gaming" value="0" oninput="gamblingFunction()"></p>
-                                            <p>Other Gambling (E.g. Lottery)<input type="number" id="othergam" name="othergam" value="0" oninput="gamblingFunction()"></p>
+                                            <p>Sports Betting<input type="number" id="sports" name="sports" value="0" onblur="gamblingFunction()"></p>
+                                            <p>Gaming<input type="number" id="gaming" name="gaming" value="0" onblur="gamblingFunction()"></p>
+                                            <p>Other Gambling (E.g. Lottery)<input type="number" id="othergam" name="othergam" value="0" onblur="gamblingFunction()"></p>
                                             <br>
                                             <p>Total Gambling<input type="number" id="totalgambling" name="totalgambling" value="0"></p>
 
