@@ -4,17 +4,18 @@ var app = express();
 app.use(express.static('css'));
 app.use(express.static('images'));
 app.use(express.static('scripts'));
+app.use(express.static('views'));
 
 app.get('/', function(req, res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'landingPage.html');
+  res.sendFile(__dirname + '/views/landingPage.html');
 });
 
-app.get('/calculatorPage.html', function(req,res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'calculatorPage.html');
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/views/calculatorPage.html');
 });
 
-app.get('/summaryPage.html', function(req,res) {
-  res.sendFile('/Users/jto01/Desktop/codebases/gambling-affordability-calculator/views/' + 'summaryPage.html');
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/views/summaryPage.html');
 });
 
 app.listen(8000, function () {
