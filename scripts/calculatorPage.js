@@ -14,7 +14,7 @@ function calculateValidatedAffordability(testStore = "") {
         var reviewTotalAdditional = parseInt(totalAdditional);
         var reviewTotalGambling = parseInt(totalGambling);
 
-        var calculateAffordability = (reviewTotalIncome) - (reviewTotalHousehold + reviewTotalAdditional + reviewTotalGambling);
+        var calculateAffordability = (reviewTotalIncome) - (reviewTotalHousehold + reviewTotalAdditional);
         var calculateSpendingDifference = (calculateAffordability - reviewTotalGambling);
 
         if (testStore !== "") {
