@@ -12,7 +12,7 @@ describe("Testing calculatorPage functionality", () => {
         const totalHouseholdTest = 2;
         const totalAdditionalTest = 3;
         const totalGamblingTest = 4;
-        const expectedTotalAffordability = (totalIncomeTest) - (totalHouseholdTest+totalAdditionalTest+totalGamblingTest);
+        const expectedTotalAffordability = (totalIncomeTest) - (totalHouseholdTest+totalAdditionalTest);
         const expectedTotalDifference = (expectedTotalAffordability) - (totalGamblingTest);
 
         const testStore = {
