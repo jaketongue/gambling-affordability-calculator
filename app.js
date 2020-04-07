@@ -19,5 +19,5 @@ app.get('/', function(req, res) {
 });
 
 app.listen(8000, function () {
-  console.log("The prototype is running, go to http://localhost:8000/ in your browser!")
+  console.log("The prototype is running, go to http://localhost:8000/ in your browser.")
 });
