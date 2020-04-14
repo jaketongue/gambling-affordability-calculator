@@ -2,8 +2,9 @@
   "name": "gambling-affordability-calculator",
   "version": "1.0.0",
   "description": "This repo contains the code for a Gambling Affordability Calculator Prototype, created for a MSc Final Year Project.",
-  "main": "app.js",
+  "main": "app.js", 
   "scripts": {
+    "start": "node app.js",
     "test": "jest"
   },
   "repository": {
