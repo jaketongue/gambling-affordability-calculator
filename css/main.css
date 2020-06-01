@@ -1,3 +1,5 @@
+/* CSS shared by all pages */
+
 @font-face {
     font-family: Sky Font;
     font-weight: 250;
@@ -95,7 +97,6 @@ body {
     background: black !important;
 }
 
-/* Added the other class in */
 ._dh4cvfl, ._dh4cvfla {
     -webkit-box-pack: center !important;
     -webkit-box-align: center !important;
@@ -106,18 +107,10 @@ body {
     justify-content: center !important;
     width: 25px !important;
     height: 25px !important;
-
-    /* Added this in for now??? */
-    /* color: rgb(31, 169, 73) !important; */
     color: white !important;
-
     box-sizing: border-box !important;
     text-align: center !important;
-
-    /* Added this in for now??? */
-    /* background: white !important; */
     background: rgb(31, 169, 73) !important;
-
     transition: all 0.25s ease-in-out 0s !important;
     overflow: hidden !important;
     border-radius: 50% !important;
@@ -128,15 +121,12 @@ body {
 }
 
 ._dh4cvfl::before {
-    /* font-family: coreicons !important; */
     font-style: normal !important;
     content: "1" !important;
     font-weight: bold !important;
 }
 
-/* Added this in... */
 ._dh4cvfla::before {
-    /* font-family: coreicons !important; */
     font-style: normal !important;
     content: "2" !important;
     font-weight: bold !important;
@@ -215,10 +205,8 @@ body {
 
 ._5ohjji {
     position: relative;
-    /* Changed this as looked weird */
     padding: 0px 15px 0px;
     margin: 0px;
-    /* background: linear-gradient(170deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) calc(15vw + 100px), rgba(255, 255, 255, 0.3) calc(15vw + 100px), rgba(255, 255, 255, 0) 100%), radial-gradient(100vw at 0% 30vw, rgb(245, 247, 249) 0%, rgb(253, 253, 254) 55vw, rgb(231, 234, 240) 100vw, rgb(231, 234, 240) 125vw, rgb(214, 219, 230) 150vw, rgb(214, 219, 230) 100%); */
 }
 
 ._cq2dpz {
@@ -264,10 +252,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* Altered margin top */
     margin-top: 30px;
     margin-bottom: 30px;
-    /* Added image sizing */
     width: 190px;
     height: 152px;
 }
@@ -276,12 +262,10 @@ body {
     color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight: 400;
-    /* I added this in */
     font-family: "Sky Font";
     height: 42px;
     margin-top: 25px;
     cursor: pointer;
-    /* And changed this */
     width: 90%;
     display: block;
     text-align: center;
@@ -296,7 +280,6 @@ body {
     border-image: initial;
     border-radius: 4px;
     padding: 12px;
-    /* And added this */
     text-decoration: none;
 }
 
@@ -304,12 +287,10 @@ body {
     color: rgb(0, 0, 0);
     font-size: 15px;
     font-weight: 400;
-    /* I added this in */
     font-family: "Sky Font";
     height: 42px;
     margin-top: 15px;
     cursor: pointer;
-    /* And changed this */
     width: 90%;
     display: block;
     text-align: center;
@@ -324,7 +305,6 @@ body {
     border-image: initial;
     border-radius: 4px;
     padding: 12px;
-    /* And added this */
     text-decoration: none;
 }
 

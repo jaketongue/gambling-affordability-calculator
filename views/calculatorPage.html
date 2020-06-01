@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <head>
+
+      <!-- Inclusion of CSS files -->
     <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="/vendor/jquery/jquery-ui.css"/>
     <link rel="stylesheet" type="text/css" href="main.css"/>
@@ -8,19 +11,17 @@
 </head>
 
 <body>
-
+        <!-- Container for side bar -->
     <div class="flexContainer">
-
         <div id="landingPageColumn" class="sidebarColumn">
-            
             <div class="columnHeaderContainer">
                 <div style="width:58px"></div>
                 <h1 class="columnHeaderText">Affordability Check</h1>
                 <div style="height: 22px; width:58px; position: relative;"></div>
             </div>
 
+        <!-- Progress Bar taken from the Registration journey -->
             <div class="sectionContainer">
-        <!-- This section is for the Progress Bar -->
                 <div class="_gor68n">
                     <div class="_15faq1v">
                         <div class="_1vebei">
@@ -34,19 +35,19 @@
                                     </div>
                                     <div class="_hhjw0fs">
                                         <span>4</span>
-                                        <div class="" style="right: 0px;"></div>
+                                    <div class="" style="right: 0px;"></div>
                                     </div>
                                     <div class="_1kkmb1zx">
                                         <span class="_gor68n">Bonus</span>
-                                        <div class="" style="right: 0px;"></div>
-                                    </div>
+                                    <div class="" style="right: 0px;"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-        <!-- This section is for the main content -->
+        <!-- Main section of the Calculator Page including drop down input boxes -->
                 <div class="_5ohjji">
                     <p class="calcPageText">Estimate how much you can afford to gamble with us by entering your <b><u>monthly</u></b> income and spending details into the form provided below:</p>
 
@@ -58,7 +59,7 @@
                             <tr class="rowHeader">
                                 <th scope="row" class="roundedTopTable" data-toggle="collapse" href="#incomeDetails">Step 1 of 5 - Income Details</th>
                             </tr>
-
+        <!-- Income details section of the drop down menu -->                                
                             <tr class=""> 
                                 <td class="collapse" id="incomeDetails">
                                     <div>
@@ -77,23 +78,23 @@
                             <tr class="rowSteps">
                                 <th scope="row" data-toggle="collapse" href="#householdSpending">Step 2 of 5 - Household Spending</th>
                             </tr>
-
+        <!-- Household spending section of the drop down menu -->     
                             <tr class=""> 
-                                    <td class="collapse" id="householdSpending">
-                                        <div>
-                                            <p>Mortgage Payments<input type="number" id="mortgage" name="mortgage" value="0" onblur="householdFunction()"></p>
-                                            <p>Rent Payments<input type="number" id="rent" name="rent" value="0" onblur="householdFunction()"></p>
-                                            <p>Council Tax<input type="number" id="council" name="council" value="0" onblur="householdFunction()"></p>
-                                            <p>Utilities<input type="number" id="utilities" name="utilities" value="0" onblur="householdFunction()"></p>
-                                            <p>Broadband/TV/Phone<input type="number" id="tech" name="tech" value="0" onblur="householdFunction()"></p>
-                                            <p>Shopping (Food/Drink)<input type="number" id="food" name="food" value="0" onblur="householdFunction()"></p>
-                                            <p>Insurance<input type="number" id="insurance" name="insurance" value="0" onblur="householdFunction()"></p>
-                                            <br>
-                                            <p>Total Household Spending<input id="totalhousehold" type="number" value="0" disabled></p>
-                                        </div>
-                                    </td>
-                                </tr>
-
+                                <td class="collapse" id="householdSpending">
+                                    <div>
+                                        <p>Mortgage Payments<input type="number" id="mortgage" name="mortgage" value="0" onblur="householdFunction()"></p>
+                                        <p>Rent Payments<input type="number" id="rent" name="rent" value="0" onblur="householdFunction()"></p>
+                                        <p>Council Tax<input type="number" id="council" name="council" value="0" onblur="householdFunction()"></p>
+                                        <p>Utilities<input type="number" id="utilities" name="utilities" value="0" onblur="householdFunction()"></p>
+                                        <p>Broadband/TV/Phone<input type="number" id="tech" name="tech" value="0" onblur="householdFunction()"></p>
+                                        <p>Shopping (Food/Drink)<input type="number" id="food" name="food" value="0" onblur="householdFunction()"></p>
+                                        <p>Insurance<input type="number" id="insurance" name="insurance" value="0" onblur="householdFunction()"></p>
+                                        <br>
+                                        <p>Total Household Spending<input id="totalhousehold" type="number" value="0" disabled></p>
+                                    </div>
+                                </td>
+                            </tr>
+        <!-- Other spending section of the drop down menu -->     
                             <tr class="rowSteps">
                                 <th scope="row" data-toggle="collapse" href="#otherSpending">Step 3 of 5 - Additional Spending</th>
                             </tr>
@@ -111,82 +112,79 @@
                                     </div>
                                 </td>
                             </tr>
-
+        <!-- Gambling section of the drop down menu -->     
                             <tr class="rowSteps">
                                 <th scope="row" data-toggle="collapse" href="#yourGambling">Step 4 of 5 - Your Gambling</th>
                             </tr>
 
                             <tr class=""> 
-                                    <td class="collapse" id="yourGambling">
-                                        <div>
-                                            <p class="_fcpqk4"><i>Please enter your <u>current</u> monthly spending on gambling prior to signing up to using our services at Sky Bet.</i></p>
-                                            <p>Sports Betting<input type="number" id="sports" name="sports" value="0" onblur="gamblingFunction()"></p>
-                                            <p>Gaming<input type="number" id="gaming" name="gaming" value="0" onblur="gamblingFunction()"></p>
-                                            <p>Other Gambling (E.g. Lottery)<input type="number" id="othergam" name="othergam" value="0" onblur="gamblingFunction()"></p>
-                                            <br>
-                                            <p>Total Gambling<input type="number" id="totalgambling" name="totalgambling" value="0" disabled></p>
+                                <td class="collapse" id="yourGambling">
+                                    <div>
+                                        <p class="_fcpqk4"><i>Please enter your <u>current</u> monthly spending on gambling prior to signing up to using our services at Sky Bet.</i></p>
+                                        <p>Sports Betting<input type="number" id="sports" name="sports" value="0" onblur="gamblingFunction()"></p>
+                                        <p>Gaming<input type="number" id="gaming" name="gaming" value="0" onblur="gamblingFunction()"></p>
+                                        <p>Other Gambling (E.g. Lottery)<input type="number" id="othergam" name="othergam" value="0" onblur="gamblingFunction()"></p>
+                                        <br>
+                                        <p>Total Gambling<input type="number" id="totalgambling" name="totalgambling" value="0" disabled></p>
 
-                                        </div>
-                                    </td>
-                                </tr>
-
+                                    </div>
+                                </td>
+                            </tr>
+        <!-- Summary section of the drop down menu -->     
                             <tr class="rowSteps">
                                 <th scope="row" class="roundedBottomTable" data-toggle="collapse" href="#review">Step 5 of 5 - Review your Results</th>
                             </tr>
 
                             <tr class=""> 
-                                    <td class="collapse" id="review">
-                                        <div>
-                                            <p>Total Income<input type="number" id="reviewTotalIncome" name="reviewTotalIncome" value="0" disabled></p>
-                                            <p>Total Household Spending<input type="number" id="reviewTotalHousehold" name="reviewTotalHousehold" value="0" disabled></p>
-                                            <p>Total Additional Spending<input type="number" id="reviewTotalAdditional" name="reviewTotalAdditional" value="0" disabled></p>
-                                            <p>Total Gambling<input type="number" id="reviewTotalGambling" name="reviewTotalGambling" value="0" disabled></p>
-                                        </div>
-                                    </td>
-                                </tr>
-
+                                <td class="collapse" id="review">
+                                    <div>
+                                        <p>Total Income<input type="number" id="reviewTotalIncome" name="reviewTotalIncome" value="0" disabled></p>
+                                        <p>Total Household Spending<input type="number" id="reviewTotalHousehold" name="reviewTotalHousehold" value="0" disabled></p>
+                                        <p>Total Additional Spending<input type="number" id="reviewTotalAdditional" name="reviewTotalAdditional" value="0" disabled></p>
+                                        <p>Total Gambling<input type="number" id="reviewTotalGambling" name="reviewTotalGambling" value="0" disabled></p>
+                                    </div>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </form>
                 </div>
-
-                </div>
-
+            </div>
+                
+        <!-- Start button & Skip Affordability Check buttons -->
                 <div class="zz">
-        <!-- Start now button div -->
                     <div>
                         <a class="_rh0gzj" style="text-decoration: none; color:white;" data-qa="calculate-button" onclick="calculateValidatedAffordability()">Calculate my affordability</a>
                     </div>
-    
-        <!-- Skip affordability check button div -->
+
                     <div>
                         <a class="_17edwu9" style="text-decoration: none; color:inherit;" href="" data-qa="skip-affordability-check" id="skipButton">Skip affordability check</a>
                     </div>
                 </div>
 
-        <!-- Footer button div -->
-                    <div class="_csjj34">
-                            <a class="_t9n6pf" style="text-decoration: none; color:inherit;" href="https://support.skybet.com/app/home?mobile=1" target="_blank" rel="noopener noreferrer" data-qa="footer-help">Need some help?</a>
+        <!-- Footer including Safer Gambling logos -->
+                <div class="_csjj34">
+                    <a class="_t9n6pf" style="text-decoration: none; color:inherit;" href="https://support.skybet.com/app/home?mobile=1" target="_blank" rel="noopener noreferrer" data-qa="footer-help">Need some help?</a>
                         <div class="_1y52p9j">
-                                <a class="_pmwann6" href="https://www.gamstop.co.uk/" alt="gamstop logo" target="_blank" rel="noopener noreferrer">Gamstop</a>
-                                <a class="_bqi4508" href="https://www.begambleaware.org/" alt="be gamble aware" target="_blank" rel="noopener noreferrer">be gamble aware</a>
-                                <a class="_1sa7llz1" href="http://www.gamcare.org.uk/" alt="gamcare" target="_blank" rel="noopener noreferrer">gamcare</a>
-                                <a class="_3zz0bxa" href="https://gamban.com/signup/promo/skybet58d/" alt="gamban" target="_blank" rel="noopener noreferrer">gamban</a>    
+                            <a class="_pmwann6" href="https://www.gamstop.co.uk/" alt="gamstop logo" target="_blank" rel="noopener noreferrer">Gamstop</a>
+                            <a class="_bqi4508" href="https://www.begambleaware.org/" alt="be gamble aware" target="_blank" rel="noopener noreferrer">be gamble aware</a>
+                            <a class="_1sa7llz1" href="http://www.gamcare.org.uk/" alt="gamcare" target="_blank" rel="noopener noreferrer">gamcare</a>
+                            <a class="_3zz0bxa" href="https://gamban.com/signup/promo/skybet58d/" alt="gamban" target="_blank" rel="noopener noreferrer">gamban</a>    
                         </div>
 
-        <!-- Safer Gambling icons div -->
-                        <div class="_ulyfow">
-                            <p class="_1x9mbur0">
-                                Committed to
-                                <a class="_hpxwzj" href="https://support.skybet.com/app/answers/detail/a_id/28?mobile=1" alt="responsible gambling" target="_blank" rel="noopener noreferrer">Responsible Gambling</a>
-                            </p>
+        <!-- Committed to Safer Gambling link -->
+                                <div class="_ulyfow">
+                                    <p class="_1x9mbur0">
+                                        Committed to
+                                        <a class="_hpxwzj" href="https://support.skybet.com/app/answers/detail/a_id/28?mobile=1" alt="responsible gambling" target="_blank" rel="noopener noreferrer">Responsible Gambling</a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-            </div>
-        </div>
-    </div>
+                </div>
 
+        <!-- Inclusion of Javascript files -->
     <script src="calculatorPage.js"></script>
     <script src="vendor/jquery/js/jquery.min.js"></script>
     <script src="vendor/jquery/js/jquery-ui.js"></script>

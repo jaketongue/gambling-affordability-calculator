@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <head>
+        <!-- Inclusion of CSS files -->     
     <link rel="stylesheet" type="text/css" href="/vendor/jquery/jquery-ui.css"/>
     <link rel="stylesheet" type="text/css" href="main.css"/>
     <link rel="stylesheet" type="text/css" href="landingPage.css"/>
@@ -10,18 +11,17 @@
 
 <body>
 
+        <!-- Container for side bar -->
     <div class="flexContainer">
-
         <div id="landingPageColumn" class="sidebarColumn">
-            
             <div class="columnHeaderContainer">
                 <div style="width:58px"></div>
                 <h1 class="columnHeaderText">Affordability Check</h1>
                 <div style="height: 22px; width:58px; position: relative;"></div>
             </div>
 
+        <!-- Progress Bar taken from the Registration journey -->
             <div class="sectionContainer">
-        <!-- This section is for the Progress Bar -->
                 <div class="_gor68n">
                     <div class="_15faq1v">
                         <div class="_1vebei">
@@ -47,107 +47,105 @@
                     </div>
                 </div>
 
+        <!-- Your Affordability Summary label at the top of the page -->
                 <div class="_1dxc75q"><div data-qa="sub-header">Your Affordability Summary</div><a class="_1lgig99"></a></div>
-
-        <!-- This section is for the main content -->
+                
+        <!-- Affordability estimate section based on the disposable income of the user -->        
                 <div class="_5ohjji">
-
                         <div class="_fcpqk1" data-qa="intro-text">Based on the financial details you have provided, we have <b>estimated</b> that the amount you can afford to gamble is:</div>
-                        <div class="_1ev4tfg">
+                            <div class="_1ev4tfg">
+                                <div class="_1ifvlii" data-qa="limit-info">
+                                    <div class="_13gp5re">
+                                        <span data-qa="current-limit">Affordability Estimate</span>
+                                    </div>
+                            
+                                    <div class="_15oy8to">
+                                        <span class="affordability_text" data-qa="current-limit-value" value="0">
+                                            &pound;
+                                        <span id="affordabilityEstimate" class="_3vb6hs">
+                                            
+                                        </span> 
+                                            per month
+                                        </span>
+                                    </div>
+                                </div>
+
+        <!-- Gambling spend section based on the input of the user --> 
+                <div class="_fcpqk1" data-qa="intro-text">You have stated that you <b>currently</b> spend this amount on gambling:</div>
+                    <div class="_1ev4tfg">
                         <div class="_1ifvlii" data-qa="limit-info">
                             <div class="_13gp5re">
-                                <span data-qa="current-limit">Affordability Estimate</span>
+                                <span data-qa="current-limit">Current Gambling</span>
                             </div>
-                            
-                        <div class="_15oy8to">
-                            <span class="affordability_text" data-qa="current-limit-value" value="0">
-                                &pound;
-                                <span id="affordabilityEstimate" class="_3vb6hs">
-           
-                                </span> 
-                                per month
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="_fcpqk1" data-qa="intro-text">You have stated that you <b>currently</b> spend this amount on gambling:</div>
-                    <div class="_1ev4tfg">
-                    <div class="_1ifvlii" data-qa="limit-info">
-                        <div class="_13gp5re">
-                            <span data-qa="current-limit">Current Gambling</span>
-                        </div>
-                        
-                        <div class="_15oy8to">
-                            <span class="current_text" data-qa="current-limit-value">
-                                &pound;
-                            <span id="reviewTotalGambling" class="_3vb6hs"></span> per month</span>
-                        </div>
-                    </div>
                     
+                            <div class="_15oy8to">
+                                <span class="current_text" data-qa="current-limit-value">
+                                    &pound;
+                                <span id="reviewTotalGambling" class="_3vb6hs"></span> per month</span>
+                            </div>
+                        </div>
+                    
+        <!-- Spending differeence section based on the affordability estimate minus the gambling spend --> 
                     <div class="_fcpqk1_hide" data-qa="intro-text">Therefore, our calculations suggest that you are spending <b>more</b> than you can afford by this amount:</div>
-                    <div class="_1ev4tfg_hide">
-                    <div class="_1ifvlii_hide" data-qa="limit-info">
-                        <div class="_13gp5re_hide">
-                            <span data-qa="current-limit">Spending Difference</span>
-                        </div>
+                        <div class="_1ev4tfg_hide">
+                            <div class="_1ifvlii_hide" data-qa="limit-info">
+                                <div class="_13gp5re_hide">
+                                    <span data-qa="current-limit">Spending Difference</span>
+                                </div>
                         
-                        <div class="_15oy8to_hide">
-                            <span class="difference_text" data-qa="current-limit-value">
-                                &pound;
-                            <span id="spendingDifference" class="_3vb6hs"></span> per month</span>
+                                <div class="_15oy8to_hide">
+                                    <span class="difference_text" data-qa="current-limit-value">
+                                        &pound;
+                                    <span id="spendingDifference" class="_3vb6hs"></span> per month</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
+            <!-- Reccomendation of next actions section --> 
                 <div class="_fcpqk2" data-qa="intro-text">Would you like to put a <b>Deposit Limit</b> in place based on our affordability estimate?</div>
                 <div class="_fcpqk3" data-qa="intro-text"><i>We reccommend that you discuss your affordability estimate with a member of our Customer Experience Team.</i></div>
-
-
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
 
+        <!-- Set deposit limit & Contact us & Not right now buttons -->  
             <div class="zz">
-        <!-- Start now button div -->
                 <div>
                     <a class="_rh0gzj" data-qa="set-deposit-button">Set deposit limit</a>
                 </div>
-                
-        <!-- Contact Us button div -->        
+                       
                 <div>
                     <a class="_17edwu9" href="https://support.skybet.com/s/article/Contact-Us-Live-Chat-Email-Address-and-Phone-Number" target="_blank" data-qa="seek-help" id="hlpButton">Contact Us</a>
                 </div>
 
-
-        <!-- Skip affordability check button div -->
                 <div>
                     <a class="_17edwu9" data-qa="not-right-now" id="nrnButton">Not right now</a>
                 </div>
             </div>
 
-        <!-- Footer button div -->
-                    <div class="_csjj34">
-                            <a class="_t9n6pf" href="https://support.skybet.com/app/home?mobile=1" target="_blank" rel="noopener noreferrer" data-qa="footer-help">Need some help?</a>
+        <!-- Footer including Safer Gambling logos -->
+                <div class="_csjj34">
+                    <a class="_t9n6pf" href="https://support.skybet.com/app/home?mobile=1" target="_blank" rel="noopener noreferrer" data-qa="footer-help">Need some help?</a>
                         <div class="_1y52p9j">
-                                <a class="_pmwann6" href="https://www.gamstop.co.uk/" alt="gamstop logo" target="_blank" rel="noopener noreferrer">Gamstop</a>
-                                <a class="_bqi4508" href="https://www.begambleaware.org/" alt="be gamble aware" target="_blank" rel="noopener noreferrer">be gamble aware</a>
-                                <a class="_1sa7llz1" href="http://www.gamcare.org.uk/" alt="gamcare" target="_blank" rel="noopener noreferrer">gamcare</a>
-                                <a class="_3zz0bxa" href="https://gamban.com/signup/promo/skybet58d/" alt="gamban" target="_blank" rel="noopener noreferrer">gamban</a>    
-                        </div>
-
-        <!-- Safer Gambling icons div -->
-                        <div class="_ulyfow">
-                            <p class="_1x9mbur0">
-                                Committed to
-                                <a class="_hpxwzj" href="https://support.skybet.com/app/answers/detail/a_id/28?mobile=1" alt="responsible gambling" target="_blank" rel="noopener noreferrer">Responsible Gambling</a>
-                            </p>
-                        </div>
+                            <a class="_pmwann6" href="https://www.gamstop.co.uk/" alt="gamstop logo" target="_blank" rel="noopener noreferrer">Gamstop</a>
+                            <a class="_bqi4508" href="https://www.begambleaware.org/" alt="be gamble aware" target="_blank" rel="noopener noreferrer">be gamble aware</a>
+                            <a class="_1sa7llz1" href="http://www.gamcare.org.uk/" alt="gamcare" target="_blank" rel="noopener noreferrer">gamcare</a>
+                            <a class="_3zz0bxa" href="https://gamban.com/signup/promo/skybet58d/" alt="gamban" target="_blank" rel="noopener noreferrer">gamban</a>    
                     </div>
-                    
+
+        <!-- Committed to Safer Gambling link -->
+                    <div class="_ulyfow">
+                        <p class="_1x9mbur0">
+                            Committed to
+                            <a class="_hpxwzj" href="https://support.skybet.com/app/answers/detail/a_id/28?mobile=1" alt="responsible gambling" target="_blank" rel="noopener noreferrer">Responsible Gambling</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
+        <!-- Inclusion of Javascript files -->
     <script src="vendor/jquery/js/jquery.min.js"></script>
     <script src="vendor/jquery/js/jquery-ui.js"></script>
     <script src="summaryPage.js"></script>
